@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.container h1{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 600px;
+    margin: 0 auto;
+    border: 5px solid white;
+    /* max-height: 100vh; */
+    margin-top: 100px;
+    gap: 0.1em;
+    padding: 0.5em;
+}
+.box{
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#clear
+{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+
+.box1{
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    height: 70px;
+}
+.box:nth-child(9){
+    
+    grid-row-start:3;
+    grid-row-end: 6;
+    grid-column-start:4;
+}
+
+.box:nth-child(17){
+    background:black;
+    grid-row-start:5 ;
+}
+.box:nth-child(16){
+    grid-column-start:2 ;
+    grid-column-end: 4;
+    background: grey;
+}
+.box:nth-child(17){
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.box:nth-child(18){
+ grid-column-start: 3;
+ grid-row-start: 6;
+}
+
+.box:nth-child(16){
+    grid-column-start:5;
+    background-color: green;
+}
+
+
+#inputbox{
+
+    /* display: block; */
+    /* box-sizing: border-box; */
+    text-align: end;
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* padding: 10px; */
+    border: solid 4px black;   
+    border-radius: 10px;
+    color: black;
+    
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+}
